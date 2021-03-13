@@ -2,7 +2,6 @@ import React from 'react';
 //These are named imports, so all have to be named exact
 import { Card, CardMedia, CardContent, CardActions, Typography, IconButton } from '@material-ui/core';
 import { AddShoppingCart } from '@material-ui/icons';
-// import classes from '*.module.css';
 import useStyles from './styles';
 
 const Product = ({ product }) => {
@@ -23,7 +22,7 @@ const Product = ({ product }) => {
         <Typography variant='h2' color='textSecondary'>{ product.description }</Typography>
         <CardActions disableSpacing className={ classes.cardActions }>
           <IconButton aria-label='Add to Card'>
-            <AddShoppingCard />
+            <AddShoppingCart />
           </IconButton>
         </CardActions>
       </CardContent>
@@ -32,4 +31,4 @@ const Product = ({ product }) => {
   )
 }
 
-export default Product
+export default Product;
